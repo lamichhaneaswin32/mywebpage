@@ -15,7 +15,7 @@
 // }
 // var b=20;
 //
-const student{
+const student={
     name:'aswin lamichhane',
     age:20,
     cgpa:3.5,
