@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform"method="post">
+        <input type="text" name="username"placeholder="username"id="username"><br>
+        <input type="password" name="password"placeholder="password"id="password"><br>
+        <button type="submit" name="submit"onclick="validation()"></button>
+
+    </form>
+    <script src="validate.js">
+        function validation(){
+            var username=document.getElementById('username');
+            var password=document.getElementById('password');
+            if(username.value==0||password.value==0)
+        {
+            alert('all firm  is required');
+        }
+        if(username.value.length<5){
+            alert('username must be greater than 5');
+        }if(username.value.includes('@')){
+            alert('username must contain @');
+            username.focus();
+        }
+        }
+    </script>
+</body>
+</html>
